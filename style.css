@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+    font-size: 25px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.calculator{
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+#results{
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    color: orangered;
+    background: #7e7e7e0e;
+}
+
+#input{
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    font-size: 27px;
+    color: #999;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+
+button{
+    border: none;
+    padding: 5px 10px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.3);
+    background: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #e9e9e9;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.operator{
+    color: #fff;
+    background: #90AFC5;
+}
+
+.operator:hover{
+    background: #2A3132;
+}
+
+.equal{
+    grid-column: span 2;
+    background: #2A3132;
+    color: #fff;
+}
+
+.equal:hover{
+    background: #90AFC5;
+}
+
+#delete{
+    background: #ff3370;
+    color: #fff;
+}
+
+#clear{
+    background: #505160;
+    color: #fff;
+}
+
+#modulus{
+    background: #07575B;
+    color: #fff;
+}
+
+.dec{
+    box-shadow:inset 5px 5px 12px rgba(0,0,0,0.3);
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+}
+
+.dec:hover{
+    background: #07575B;
+}
+
+.dec p{
+    font-size: 36px;
+}
